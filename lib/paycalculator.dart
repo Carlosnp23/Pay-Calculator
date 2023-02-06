@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 
-class EmployeeSalary extends StatefulWidget {
-  const EmployeeSalary({Key? key}) : super(key: key);
+class paycalculator extends StatefulWidget {
+  const paycalculator({Key? key}) : super(key: key);
 
   @override
-  State<EmployeeSalary> createState() => _EmployeeSalaryState();
+  State<paycalculator> createState() => _paycalculatorState();
 }
 
-class _EmployeeSalaryState extends State<EmployeeSalary> {
+class _paycalculatorState extends State<paycalculator> {
   @override
   Widget build(BuildContext context) {
     final taxpay = TextEditingController();
