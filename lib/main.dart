@@ -1,29 +1,23 @@
+// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors
+
 import 'package:flutter/material.dart';
+import 'package:pay_calculator/paycalculator.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-            appBar: AppBar(title: const Text('Pay Calculator')),
-            body: Container(
-              child: Column(children: [
-                Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      size: 35.0,
-                    ),
-                  ],
-                ),
-              ]),
-            )));
+      title: 'Pay Calculator',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: EmployeeSalary(),
+    );
   }
 }
